@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Roboto:wght@500;700;900&display=swap");
+
+:root {
+  /* color */
+  --mossGreen: #274c5b;
+  --lightGreen: #7eb693;
+  --yellow: #efd372;
+  --gray: #d4d4d4;
+  --milkWhite: #f9f8f8;
+  --mildWhite2: #eff6f1;
+  --lightBlack: #525c60;
+  /* font */
+  --roboto: "Roboto", sans-serif;
+  --opanSans: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--opanSans);
+  color: #fff;
+}
+
+/* ===============Color Class Setting================= */
+.mossGreen{
+  color: var(--mossGreen);
+}
+.lightGreen{
+  color: var(--lightGreen);
+}
+.yellow{
+  color: var(--yellow);
+}
+.gray{
+  color: var(--gray);
+}
+.milkWhite{
+  color: var(--milkWhite);
+}
+.milkWhite2{
+  color: var(--milkWhite2);
+}
+.lightBlack{
+  color: var(--lightBlack);
+}
+.white {
+  color: #fff;
+}
+.black {
+  color: #000;
+}
+/* ==============Text Default================= */
+.heading {
+  color: var(--mossGreen);
+  font-family: var(--roboto);
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.heading.h1 {
+  font-size: 7rem;
+}
+.heading.h2 {
+  font-size: 5rem;
+}
+.heading.h3 {
+  font-size: 4rem;
+}
+.heading.h4 {
+  font-size: 3.5rem;
+}
+.heading.h5 {
+  font-size: 3rem;
+}
+.heading.h6 {
+  font-size: 2.5rem;
+}
+
+.text {
+  color: var(--lightBlack);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%; /* 29.772px */
+}
+
+/* ============Container Wrapper=========== */
+.wapper {
+  --gutter-x: 1.5rem;
+  --gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--gutter-x) * 0.5);
+  padding-left: calc(var(--gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1200px) {
+  .wapper {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}

@@ -1,0 +1,33 @@
+.Button {
+  display: flex;
+  padding: 28px 39px 29px 39px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: var(--mossGreen);
+  min-width: 220px;
+  width: max-content;
+  color: #fff;
+  font-family: var(--roboto);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Button.Style1 {
+  background: var(--mossGreen);
+  color: #fff;
+}
+
+.Button.Style2 {
+  background: var(--yellow);
+  color: var(--mossGreen);
+}
+
+.Button.Style3 {
+  border: 1px solid var(--mossGreen);
+  background: #fff;
+  color: var(--mossGreen);
+}
