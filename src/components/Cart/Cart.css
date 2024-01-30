@@ -1,0 +1,16 @@
+#Cart {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: 6.6rem;
+  padding: 0.5rem;
+  padding-right: 23px;
+  border-radius: 33px;
+  border: 0.1rem solid #e0e0e0;
+  color: var(--mossGreen);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

@@ -25,29 +25,29 @@ html {
 body {
   font-size: 1.6rem;
   font-family: var(--opanSans);
-  color: #fff;
+  color: #000;
 }
 
 /* ===============Color Class Setting================= */
-.mossGreen{
+.mossGreen {
   color: var(--mossGreen);
 }
-.lightGreen{
+.lightGreen {
   color: var(--lightGreen);
 }
-.yellow{
+.yellow {
   color: var(--yellow);
 }
-.gray{
+.gray {
   color: var(--gray);
 }
-.milkWhite{
+.milkWhite {
   color: var(--milkWhite);
 }
-.milkWhite2{
+.milkWhite2 {
   color: var(--milkWhite2);
 }
-.lightBlack{
+.lightBlack {
   color: var(--lightBlack);
 }
 .white {
@@ -64,6 +64,7 @@ body {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  transition: all 0.3s ease;
 }
 
 .heading.h1 {
@@ -91,7 +92,13 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 165.4%; /* 29.772px */
+  line-height: 3rem; /* 29.772px */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /* ============Container Wrapper=========== */
@@ -105,26 +112,58 @@ body {
   margin-left: auto;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 576px) {
   .wapper {
-    max-width: 1140px;
+    max-width: 540px;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 768px) {
+  .wapper {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .wapper {
     max-width: 960px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
+@media screen and (min-width: 1200px) {
+  .wapper {
+    max-width: 1140px;
   }
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
+@media screen and (min-width: 1400px) {
+  .wapper {
+    max-width: 1320px;
   }
 }
+
+/* custom rieng cho header */
+@media screen and (min-width: 1600px) {
+  .wapper{
+    max-width: 1400px;
+  }
+
+  #header .wapper {
+    max-width: 1600px;
+  }
+}
+
+/* ============Common Class=========== */
+.block {
+  display: block;
+}
+.text-center{
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+
+
+
+

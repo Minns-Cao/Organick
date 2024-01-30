@@ -1,0 +1,44 @@
+/* ===Hover1=== */
+.hover {
+  transition: all 0.3s ease;
+}
+
+.hover:hover {
+  transform: scale(1.15);
+}
+
+/* ===Hover2=== */
+.hover_2 {
+  transition: all 0.3s ease;
+}
+
+.hover_2:hover {
+  font-size: 2rem;
+  color: var(--lightGreen);
+}
+
+.hover_2:hover .text {
+  font-size: 2rem;
+  color: var(--lightGreen);
+}
+
+.hover_2:hover .heading {
+  color: var(--yellow);
+}
+
+/* ===Hover3=== */
+.hover_3 {
+  transition: all 0.3s ease;
+}
+
+.hover_3:hover {
+  color: var(--lightGreen);
+}
+
+.hover_3:hover .text {
+  color: var(--lightGreen);
+}
+
+.hover_3:hover .heading {
+  color: var(--yellow);
+}

@@ -1,0 +1,106 @@
+#header {
+  padding: 6.9rem 0;
+}
+
+#header .contentBox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#header .logoBox {
+  width: 198.791px;
+  height: 53.716px;
+}
+
+#header .logoBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#header .navigation {
+  margin-left: 150px;
+  display: flex;
+  gap: 3.5rem;
+}
+
+#header .navigation .nav-item {
+  color: var(--mossGreen);
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: all 0.3s ease;
+}
+
+#header .navigation .nav-item:hover {
+  font-weight: 900;
+  transform: scale(1.3);
+}
+
+#header .navigation:hover .nav-item:not(:hover){
+  opacity: 0.4;
+}
+
+#header .searchBox {
+  margin-right: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  height: 66px;
+  border-radius: 36px;
+  background: #fafafa;
+  padding: 5px 5px 5px 20px;
+  overflow: hidden;
+}
+
+#header .searchBox::before {
+  user-select: none;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 36px;
+  background-color: #7eb693;
+  width: 0%;
+}
+
+#header .searchBox:hover::before {
+  animation: searchAnimation 1s ease-out;
+}
+
+@keyframes searchAnimation {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+
+#header .searchBox input {
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+
+#header .searchBox input:focus {
+  outline: none;
+}
+
+#header .searchBox img {
+  height: 56px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
