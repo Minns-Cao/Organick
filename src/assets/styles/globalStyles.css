@@ -12,6 +12,8 @@
   /* font */
   --roboto: "Roboto", sans-serif;
   --opanSans: "Open Sans", sans-serif;
+  --section-pad: 18.7rem;
+  --section-pad2: 13rem;
 }
 
 * {
@@ -30,31 +32,31 @@ body {
 
 /* ===============Color Class Setting================= */
 .mossGreen {
-  color: var(--mossGreen);
+  color: var(--mossGreen) !important;
 }
 .lightGreen {
-  color: var(--lightGreen);
+  color: var(--lightGreen) !important;
 }
 .yellow {
-  color: var(--yellow);
+  color: var(--yellow) !important;
 }
 .gray {
-  color: var(--gray);
+  color: var(--gray) !important;
 }
 .milkWhite {
-  color: var(--milkWhite);
+  color: var(--milkWhite) !important;
 }
 .milkWhite2 {
-  color: var(--milkWhite2);
+  color: var(--milkWhite2) !important;
 }
 .lightBlack {
-  color: var(--lightBlack);
+  color: var(--lightBlack) !important;
 }
 .white {
-  color: #fff;
+  color: #fff !important;
 }
 .black {
-  color: #000;
+  color: #000 !important;
 }
 /* ==============Text Default================= */
 .heading {

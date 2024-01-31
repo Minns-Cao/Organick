@@ -1,11 +1,10 @@
-import Footer from '../../layout/Footer/Footer'
-import Header from '../../layout/Header/Header'
+import BannerSubcribe from '../../layout/BannerSubcribe/BannerSubcribe'
+
 
 const Home = () => {
   return (
     <>
-      <Header/>
-      <Footer/>
+      <BannerSubcribe/>
     </>
   )
 }

@@ -15,8 +15,22 @@ const Header = () => {
             <img src={logo} alt="" />
           </div>
           <nav className="navigation mossGreen">
-            <div className="nav-item">Home</div>
-            <div className="nav-item">About</div>
+            <div
+              className="nav-item"
+              onClick={() => {
+                nav("/");
+              }}
+            >
+              Home
+            </div>
+            <div
+              className="nav-item"
+              onClick={() => {
+                nav("/about");
+              }}
+            >
+              About
+            </div>
             <div className="nav-item">
               <span>Pages</span> <img src={iconDropdown} alt="" />
             </div>
@@ -28,14 +42,28 @@ const Header = () => {
             >
               Shop
             </div>
-            <div className="nav-item">Projects</div>
-            <div className="nav-item">News</div>
+            <div
+              className="nav-item"
+              onClick={() => {
+                nav("/projects");
+              }}
+            >
+              Projects
+            </div>
+            <div
+              className="nav-item"
+              onClick={() => {
+                nav("/news");
+              }}
+            >
+              News
+            </div>
           </nav>
           <div className="searchBox">
             <input type="text" />
             <img src={iconSearch} alt="" />
           </div>
-          <Cart/>
+          <Cart />
         </div>
       </div>
     </header>

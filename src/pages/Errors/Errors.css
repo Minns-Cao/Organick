@@ -1,0 +1,40 @@
+#Errors {
+  position: relative;
+  width: 100%;
+  height: 89.8rem;
+  margin-bottom: var(--section-pad2);
+}
+
+#Errors img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#Errors .wapper {
+  height: 100%;
+}
+
+#Errors .boxContent {
+  display: flex;
+  height: 100%;
+}
+
+#Errors .boxContent .leftSide,
+#Errors .boxContent .rightSide {
+  width: 50%;
+}
+
+#Errors .boxContent .rightSide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 13rem;
+}
+#Errors .boxContent .rightSide  .content {
+  margin-bottom: 4rem;
+}

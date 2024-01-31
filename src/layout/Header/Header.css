@@ -67,10 +67,12 @@
   border-radius: 36px;
   background-color: #7eb693;
   width: 0%;
+  
 }
 
 #header .searchBox:hover::before {
-  animation: searchAnimation 1s ease-out;
+  animation: searchAnimation 1s ease;
+
 }
 
 @keyframes searchAnimation {

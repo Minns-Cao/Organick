@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="boxContent">
           <div className="col">
             <h5 className="heading h5 text-end">Contact Us</h5>
-            <div className="email hover2">
+            <div className="email hover_2">
               <p className="text bold">Email</p>
               <a href={`mailto: ${INFOMATION.email}`} className="text block">
                 {INFOMATION.email}

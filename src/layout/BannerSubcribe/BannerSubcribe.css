@@ -1,0 +1,42 @@
+#BannerSubcribe .boxContent {
+  background-image: url(../../assets/image/bannerSubcribe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  padding: 12.1rem 7.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--section-pad2);
+}
+
+#BannerSubcribe .boxContent .rightSide {
+  display: flex;
+  gap: 6px;
+}
+
+#BannerSubcribe .boxContent .rightSide input {
+  padding: 2.8rem 0rem 3.1rem 2.3rem;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 16px;
+  background: #fff;
+  border: none;
+  width: 349px;
+}
+
+#BannerSubcribe .boxContent .rightSide input::placeholder {
+  color: #ababab;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 16px;
+}
+
+#BannerSubcribe .boxContent .rightSide input:focus {
+  outline: none;
+}
