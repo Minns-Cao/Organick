@@ -1,0 +1,32 @@
+#home .bannerTop{
+  background: url(../../assets/image/Home_bannerTop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: var(--section-pad3);
+}
+
+#home .bannerTop .boxContent {
+  display: flex;
+  padding: 25rem 0;
+}
+
+#home .bannerTop .boxContent .leftSide,
+#home .bannerTop .boxContent .rightSide{
+  width: 50%;
+}
+
+#home .bannerTop .boxContent .leftSide h1 {
+  max-width: 51.1rem;
+  margin: 0.8rem 0 2.3rem;
+}
+
+#home .cardList {
+  margin-bottom: var(--section-pad);
+}
+
+#home .cardList .boxContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}

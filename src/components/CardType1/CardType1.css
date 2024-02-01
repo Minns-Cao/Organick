@@ -1,0 +1,34 @@
+#CardType1 {
+  position: relative;
+  width: 68.2rem;
+  height: 36.7rem;
+  border-radius: 3rem;
+}
+
+#CardType1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+#CardType1 .content {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 50%;
+  padding: 11rem 0 11rem 5.5rem;
+}
+#CardType1 .content p {
+  margin-bottom: 1rem;
+}
+#CardType1 .content p{
+  color: var(--color1);
+}
+#CardType1 .content h3 {
+  color: var(--color2);
+}

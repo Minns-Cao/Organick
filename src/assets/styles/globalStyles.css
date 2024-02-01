@@ -1,19 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Roboto:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Roboto:wght@500;700;900&&family=Yellowtail&display=swap");
 
 :root {
   /* color */
   --mossGreen: #274c5b;
   --lightGreen: #7eb693;
+  --green: #68A47F;
   --yellow: #efd372;
   --gray: #d4d4d4;
   --milkWhite: #f9f8f8;
-  --mildWhite2: #eff6f1;
+  --milkWhite2: #eff6f1;
   --lightBlack: #525c60;
   /* font */
   --roboto: "Roboto", sans-serif;
   --opanSans: "Open Sans", sans-serif;
+  --yellowTail: 'Yellowtail', cursive;
+  /* padding */
   --section-pad: 18.7rem;
   --section-pad2: 13rem;
+  --section-pad3: 15rem;
 }
 
 * {
@@ -101,6 +105,12 @@ body {
 
 .bold {
   font-weight: 700;
+}
+
+.text-ytail {
+  font-family: var(--yellowTail);
+  font-size: 3.6rem;
+  color: var(--green);
 }
 
 /* ============Container Wrapper=========== */

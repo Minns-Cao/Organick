@@ -32,7 +32,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  transition: all 0.3s ease;
+  border: solid transparent;
+  border-width: 2px 0;
+  transition: all 0.5s ease;
+}
+
+#header .navigation .nav-item.active {
+  padding: 2px 0;
+  border: solid var(--mossGreen);
+  border-width: 2px 0;
 }
 
 #header .navigation .nav-item:hover {

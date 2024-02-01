@@ -5,8 +5,11 @@ import iconDropdown from "../../assets/image/Icon_Dropdown.svg";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
 import Cart from "../../components/Cart/Cart";
+import { useEffect, useState } from "react";
 const Header = () => {
   let nav = useNavigate();
+  let [currPage, setCurrPage] = useState();
+  useEffect(() => {}, [currPage]);
   return (
     <header id="header">
       <div className="wapper">
@@ -16,16 +19,18 @@ const Header = () => {
           </div>
           <nav className="navigation mossGreen">
             <div
-              className="nav-item"
+              className={`nav-item ${currPage === "home" ? "active" : ""}`}
               onClick={() => {
+                setCurrPage("home");
                 nav("/");
               }}
             >
               Home
             </div>
             <div
-              className="nav-item"
+              className={`nav-item ${currPage === "about" ? "active" : ""}`}
               onClick={() => {
+                setCurrPage("about");
                 nav("/about");
               }}
             >
@@ -35,24 +40,27 @@ const Header = () => {
               <span>Pages</span> <img src={iconDropdown} alt="" />
             </div>
             <div
-              className="nav-item"
+              className={`nav-item ${currPage === "shop" ? "active" : ""}`}
               onClick={() => {
+                setCurrPage("shop");
                 nav("/shop");
               }}
             >
               Shop
             </div>
             <div
-              className="nav-item"
+              className={`nav-item ${currPage === "projects" ? "active" : ""}`}
               onClick={() => {
+                setCurrPage("projects");
                 nav("/projects");
               }}
             >
               Projects
             </div>
             <div
-              className="nav-item"
+              className={`nav-item ${currPage === "news" ? "active" : ""}`}
               onClick={() => {
+                setCurrPage("news");
                 nav("/news");
               }}
             >

@@ -14,6 +14,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all 0.3s ease;
 }
 
 .Button.Style1 {
@@ -30,4 +31,20 @@
   border: 1px solid var(--mossGreen);
   background: #fff;
   color: var(--mossGreen);
+}
+
+.Button svg{
+  transition: all 0.3s ease;
+}
+
+.Button:hover {
+  color: var(--yellow);
+}
+
+.Button.Style2:hover {
+  color: var(--milkWhite2);
+} 
+
+.Button:hover  svg{
+  transform: translateX(1rem);
 }
